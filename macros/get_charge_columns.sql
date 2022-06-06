@@ -54,7 +54,8 @@
     {"name": "status", "datatype": dbt_utils.type_string()},
     {"name": "transfer_data_destination", "datatype": dbt_utils.type_string()},
     {"name": "transfer_group", "datatype": dbt_utils.type_string()},
-    {"name": "transfer_id", "datatype": dbt_utils.type_string()}
+    {"name": "transfer_id", "datatype": dbt_utils.type_string()},
+    {"name": "payment_method_details", "datatype": dbt_utils.type_string()}
 ] %}
 
 {{ return(columns) }}
