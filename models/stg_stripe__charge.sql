@@ -48,7 +48,8 @@ final as (
         receipt_number,
         refunded as is_refunded,
         status,
-        invoice_id
+        invoice_id,
+        payment_method_details
 
         {% if var('stripe__charge_metadata',[]) %}
         , {{ fivetran_utils.pivot_json_extract(string = 'metadata', list_of_properties = var('stripe__charge_metadata')) }}
